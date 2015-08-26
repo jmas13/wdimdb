@@ -21,7 +21,7 @@ Movie.favorites = function(){ //Populates Movie.favs with an array of movies fro
 };
 
 Movie.search = function(searchString){ //returns promise containing array of movies from searching omdb
-  var url = "http://www.omdbapi.com/?s=" + searchString;
+  var url = "https://www.omdbapi.com/?s=" + searchString;
   var request = get(url)
   .then(function(responseText){
     var responseArray = JSON.parse(responseText).Search;
@@ -39,7 +39,7 @@ Movie.search = function(searchString){ //returns promise containing array of mov
 };
 
 Movie.moreInfo = function(id){
-  var url = "http://www.omdbapi.com/?i=" + id;
+  var url = "https://www.omdbapi.com/?i=" + id;
   var request = get(url);
   return request;
 }
