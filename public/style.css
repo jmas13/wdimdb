@@ -1,0 +1,69 @@
+body{
+  background: #DFE2DB;
+}
+h1{
+  text-align: center;
+}
+
+h1 .float {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+}
+
+#tv {
+  position: relative;
+  display: inline-block;
+  left:2em;
+  width: 3em;
+  height: 2em;
+  margin: 20px 0;
+  background: yellow;
+  border-radius: 50% / 10%;
+  color: black;
+  text-align: center;
+  text-indent: .1em;
+}
+#tv:before {
+  content: 'imdb';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+#burst-12 {
+    display: inline-block;
+    background: red;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    background: red;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
